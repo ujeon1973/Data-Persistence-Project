@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
         playerScores = new Dictionary<string, int>();
 
-        filePath = Application.dataPath + "/playerData.json";
+        filePath = Application.persistentDataPath + "/playerData.json";
         LoadScore(); // 게임 시작 시 데이터 로드
     }
 
