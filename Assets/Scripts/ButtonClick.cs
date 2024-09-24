@@ -70,6 +70,7 @@ public class ButtonClick : MonoBehaviour
 
     void StartGame()
     {
+        GameManager.Instance.playerScores["Saga"] = 0;
         SceneManager.LoadScene("main"); // "main"은 종료 후 로드할 씬의 이름입니다.
     }
 }
